@@ -16,6 +16,7 @@ function newItem(URL, left, bottom){
     })
 }
 
+// Please read below! Not sure what went wrong here.
 function background(URL, left, bottom, width, height){
     for(let h = 0; h < height; h++){
         for(let w = 0; w < width; w++){
@@ -50,7 +51,11 @@ sword.addEventListener('click', function(){
     sword.remove()
 }) */
 
-/* background('./assets/sky.png', 0, 0, 100, 100)
+/*
+Absolutely couldn't get this right. The bottom attempt was just copying from the solution code to see if I could reverse engineer it, but even copying the solution
+didn't fix whatever issue I was having. Please take a look at let me know what you think.
+
+background('./assets/sky.png', 0, 0, 100, 100)
 background('./assets/grass.png', 0, 0, 100, 100)
 
 background('./assets/sky.png', 0, horizon, window.innerWidth/100, heightOfSky/100)
