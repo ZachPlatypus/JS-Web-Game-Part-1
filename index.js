@@ -16,6 +16,15 @@ function newItem(URL, left, bottom){
     })
 }
 
+function background(URL, left, bottom, width, height){
+    for(let h = 0; h < height; h++){
+        for(let w = 0; w < width; w++){
+            newImage(URL, left + w*100, bottom+h*100)
+        }
+    }
+}
+
+
 /* let greenCharacter = document.createElement('img')
 greenCharacter.src = 'assets/green-character.gif'
 greenCharacter.style.position = 'fixed'
@@ -40,6 +49,12 @@ document.body.append(sword)
 sword.addEventListener('click', function(){
     sword.remove()
 }) */
+
+/* background('./assets/sky.png', 0, 0, 100, 100)
+background('./assets/grass.png', 0, 0, 100, 100)
+
+background('./assets/sky.png', 0, horizon, window.innerWidth/100, heightOfSky/100)
+background('./assets/grass.png', 0, 0, window.innerWidth/100, heightOfGrass/100) */
 
 newImage('./assets/green-character.gif', 100, 100)
 newImage('./assets/pine-tree.png', 450, 200)
